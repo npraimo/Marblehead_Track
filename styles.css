@@ -1,12 +1,7 @@
-table {
-  border-collapse: separate;
-  width: 35vw;
-}
-
 th,
 td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 4px;
   text-align: center;
 }
 
@@ -20,7 +15,12 @@ tr:nth-child(even) {
 
 .table-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-collapse: separate;
+  justify-content: center;
+}
+.table-wrapper table {
+  margin: 0 5vw;
 }
 
 #mainTitle {
