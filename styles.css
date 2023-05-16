@@ -6,7 +6,7 @@ td {
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: rgba(211, 0, 0, 0.651);
 }
 
 tr:nth-child(even) {
@@ -19,8 +19,13 @@ tr:nth-child(even) {
   border-collapse: separate;
   justify-content: center;
 }
+
+td:nth-child(3) {
+  width: 10vw;
+}
+
 .table-wrapper table {
-  margin: 0 5vw;
+  margin: 0 4vw;
 }
 
 #mainTitle {
