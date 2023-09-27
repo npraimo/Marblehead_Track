@@ -1,20 +1,24 @@
 body {
-  background-color: #f2f2f2;
+  background-color: #c0c0c0;
 }
 
 th,
 td {
-  border: 1px solid #ddd;
-  padding: 4px;
+  border: 1.5px solid #000000;
+  padding: 3px;
   text-align: center;
 }
 
 th {
-  background-color: rgba(211, 0, 0, 0.651);
+  background-color: rgb(211, 29, 29);
 }
 
 tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #c5c5c5;
 }
 
 .table-wrapper {
@@ -39,6 +43,8 @@ td:nth-child(4) {
   text-align: center;
   background-color: black;
   color: white;
+  font: 2.5rem Neucha, sans-serif;
+  margin: 10px auto;
 }
 
 #menuSelect {
@@ -81,4 +87,20 @@ td:nth-child(4) {
 
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+#running-man {
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  animation: run 5s cubic-bezier(0.2, -1.55, 0.27, 0.55) infinite;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
