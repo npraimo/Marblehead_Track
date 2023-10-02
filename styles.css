@@ -10,12 +10,8 @@ td {
 }
 
 th {
-  background-color: rgba(245, 2, 2, 0.788);
+  background-color: #dc3545;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-tr:nth-child(1) {
-  background-color: #e4f316;
 }
 
 tr:nth-child(even) {
@@ -40,15 +36,7 @@ td:nth-child(4) {
 
 .table-wrapper table {
   margin: 0 4vw;
-}
-
-#mainTitle {
-  text-align: center;
-  background-color: black;
-  color: white;
-  font: 2rem Neucha, sans-serif;
-  margin: 10px 40px;
-  border-radius: 10%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45);
 }
 
 #menuSelect {
@@ -92,35 +80,4 @@ td:nth-child(4) {
 
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
-}
-
-#running-man {
-  z-index: 1;
-  position: absolute;
-  bottom: 16px;
-  left: -15px;
-  animation: run 15s ease-in-out infinite;
-}
-
-#finish-line {
-  z-index: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100px;
-  height: 75px;
-  background-color: black;
-}
-
-#theRace {
-  overflow: hidden;
-}
-
-@keyframes run {
-  0% {
-    transform: translateX(0vw);
-  }
-  100% {
-    transform: translateX(98vw);
-  }
 }
