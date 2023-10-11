@@ -1,21 +1,26 @@
-body {
-  background-color: #c0c0c0;
+#mainTitle {
+  align-items: center;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3em;
+  text-align: center;
+  margin: 0px 20vw;
 }
 
-.boy {
-  padding: 10px 10px;
+body {
+  background-color: #c0c0c0;
 }
 
 th,
 td {
   border: 1.5px solid #000000;
-  padding: 3px;
   text-align: center;
 }
 
 th {
   background-color: #dc3545;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2em;
 }
 
 tr:nth-child(even) {
@@ -28,18 +33,11 @@ tr:nth-child(even) {
   border-collapse: separate;
   justify-content: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
-td:nth-child(3) {
-  width: 12vw;
-}
-td:nth-child(4) {
-  width: 10vw;
-}
-
-.table-wrapper table {
-  margin: 0 4vw;
+table {
+  margin: 1vh 2vw;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45);
 }
 
@@ -47,4 +45,31 @@ td:nth-child(4) {
   text-align: center;
   justify-content: center;
   margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+  #mainTitle {
+    font-size: 2em;
+    margin: 0px 1vw;
+  }
+
+  .table-wrapper {
+    font-size: 0.8em;
+  }
+
+  td:nth-child(1) {
+    width: 10vw;
+  }
+  td:nth-child(2) {
+    width: 15vw;
+  }
+  td:nth-child(3) {
+    width: 35vw;
+  }
+  td:nth-child(4) {
+    width: 20vw;
+  }
+  td:nth-child(5) {
+    width: 15vw;
+  }
 }
