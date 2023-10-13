@@ -7,6 +7,10 @@
   margin: 0px 20vw;
 }
 
+td:nth-child(3) {
+  width: 10vw;
+}
+
 body {
   background-color: #c0c0c0;
 }
