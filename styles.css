@@ -8,6 +8,10 @@
 }
 
 td:nth-child(3) {
+  width: 14vw;
+}
+
+td:nth-child(4) {
   width: 10vw;
 }
 
