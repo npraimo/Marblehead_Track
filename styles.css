@@ -50,6 +50,34 @@ tr:nth-child(even) {
   font-size: 1.2em;
 }
 
+.relay-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border-collapse: separate;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2em;
+}
+
+.relay-wrapper .relay td:nth-child(2) {
+  width: 12vw;
+}
+.relay-wrapper .relay td:nth-child(3) {
+  width: 12vw;
+}
+.relay-wrapper .relay td:nth-child(4) {
+  width: 12vw;
+}
+.relay-wrapper .relay td:nth-child(5) {
+  width: 12vw;
+}
+.relay-wrapper .relay td:nth-child(6) {
+  width: 6vw;
+}
+.relay-wrapper .relay td:nth-child(7) {
+  width: 6vw;
+}
+
 table {
   margin: 1vh 2vw;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45);
