@@ -7,6 +7,12 @@
   margin: 0px 20vw;
 }
 
+.menuContainer {
+  display: grid;
+  justify-content: center;
+  margin: 0px 20vw;
+}
+
 td:nth-child(3) {
   width: 14vw;
 }
