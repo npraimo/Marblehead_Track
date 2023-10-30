@@ -4,13 +4,7 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 3em;
   text-align: center;
-  margin: 0px 20vw;
-}
-
-.menuContainer {
-  display: grid;
-  justify-content: center;
-  margin: 0px 20vw;
+  margin: 0px 30vw;
 }
 
 td:nth-child(3) {
@@ -83,12 +77,6 @@ table {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45);
 }
 
-#menuSelect {
-  text-align: center;
-  justify-content: center;
-  margin-top: auto;
-}
-
 @media screen and (max-width: 600px) {
   #mainTitle {
     font-size: 2em;
@@ -114,4 +102,15 @@ table {
   td:nth-child(5) {
     width: 15vw;
   }
+  .btn-custom {
+    width: 250px;
+    height: 45px;
+    font-size: 1em;
+  }
+}
+
+.btn-custom {
+  width: 400px;
+  height: 70px;
+  font-size: 1.35em;
 }
