@@ -11,25 +11,47 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </nav>
+
+
     <div id="mainTitle">
-        <h1 class="m-2 p-3 border shadow rounded-pill h2 text-center bg-danger font-weight-bold">2023-2024 Marblehead
-            Indoor Track and Field Schedule
-        </h1>
+        <div class="d-flex justify-content-center">
+            <h1 class="m-2 p-3 border shadow rounded-pill h2 text-center bg-danger font-weight-bold w-75">2023-2024
+                Marblehead
+                Indoor Track and Field Schedule
+            </h1>
+        </div>
+
+
     </div>
     <div class="container">
-        <h1 class="h2 m-3 text-center">Schedule</h1>
-        <iframe src="https://drive.google.com/file/d/105DA4UbFH3TcWhsvpObAgKYKRPwlTJgx/preview" width="640" height="480"
-            allow="autoplay"></iframe>
+
+        <div class="d-flex justify-content-center">
+            <iframe class="border-0" style="width: 45vw;height:60vh;"
+                src="https://docs.google.com/document/d/e/2PACX-1vSl2U_g3hx004IguiGkDXw5c38aw0ssosW1GKSC370N7XV3UF6IfABbF5DzraZk31HykvHIT3oHg-iL/pub?embedded=true"></iframe>
+        </div>
         <br />
 
     </div>
     <div class="container text-center">
-        <a class=" p-3 border shadow rounded-pill bg-light"
-            href="https://drive.google.com/file/d/105DA4UbFH3TcWhsvpObAgKYKRPwlTJgx/view?usp=sharing">Click here for
+        <a class=" p-3 border shadow rounded-pill bg-light" target="_blank"
+            href="https://docs.google.com/document/d/18tALhfmWMeL9163PVXVekIMx2fRjUr4zcFFuB5NLkWI/export?format=pdf">Click
+            here for PDF Download of the
             schedule</a>
     </div>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </html>
