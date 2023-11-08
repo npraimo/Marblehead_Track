@@ -1,4 +1,4 @@
-#mainTitle {
+.mainTitle {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -51,6 +51,10 @@ tr:nth-child(odd) {
   font-size: 1.2em;
 }
 
+.btn-custom {
+  font-size: 1.3em;
+}
+
 .relay-wrapper .relay td:nth-child(2) {
   width: 12vw;
 }
@@ -76,11 +80,6 @@ table {
 }
 
 @media screen and (max-width: 600px) {
-  #mainTitle {
-    font-size: 2em;
-    margin: 0px 1vw;
-  }
-
   .table-wrapper {
     font-size: 0.8em;
   }
@@ -100,15 +99,24 @@ table {
   td:nth-child(5) {
     width: 15vw;
   }
+  #scheduleFrame {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
   .btn-custom {
-    width: 250px;
-    height: 45px;
-    font-size: 1em;
+    width: 70vw;
+    height: 8vh;
+    font-size: 1.3em;
   }
 }
 
-.btn-custom {
-  width: 400px;
-  height: 70px;
-  font-size: 1.35em;
+#scheduleTable tr td:nth-child(1) {
+  width: 10vw;
+}
+#scheduleTable tr td:nth-child(2) {
+  width: 20vw;
+}
+#scheduleTable tr td:nth-child(3) {
+  width: 15vw;
 }

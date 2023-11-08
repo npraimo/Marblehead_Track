@@ -8,50 +8,132 @@
     <title>Marblehead Track 2023-2024 Schedule</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 
 <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        </div>
+    <nav class="navbar navbar-light bg-danger">
+        <a class="h2 text-center font-weight-bold navbar-brand shadow border p-2 " href="../index.html">Home</a>
+        <a class=" h2 text-center font-weight-bold mainTitle">Marblehead
+            Track and Field</a>
+        <a></a>
     </nav>
 
-
-    <div id="mainTitle">
-        <div class="d-flex justify-content-center">
-            <h1 class="m-2 p-3 border shadow rounded-pill h2 text-center bg-danger font-weight-bold w-75">2023-2024
-                Marblehead
-                Indoor Track and Field Schedule
-            </h1>
-        </div>
-
-
-    </div>
     <div class="container">
 
         <div class="d-flex justify-content-center">
-            <iframe class="border-0" style="width: 45vw;height:60vh;"
-                src="https://docs.google.com/document/d/e/2PACX-1vSl2U_g3hx004IguiGkDXw5c38aw0ssosW1GKSC370N7XV3UF6IfABbF5DzraZk31HykvHIT3oHg-iL/pub?embedded=true"></iframe>
-        </div>
-        <br />
+            <table border="1" id="scheduleTable">
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>Dec. 9th</td>
+                    <td>NEC Invitational</td>
+                    <td>New Balance Track</td>
+                </tr>
+                <tr>
+                    <td>Dec. 14th</td>
+                    <td>Dual Meet</td>
+                    <td>Swampscott</td>
+                </tr>
+                <tr>
+                    <td>Dec. 20th</td>
+                    <td>Tri Meet</td>
+                    <td>Marblehead vs. Peabody & Winthrop</td>
+                </tr>
+                <tr>
+                    <td>Dec. 29th</td>
+                    <td>NEC Freshman/Sophomore</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>Jan. 4th</td>
+                    <td>Dual Meet</td>
+                    <td>Danvers</td>
+                </tr>
+                <tr>
+                    <td>Jan. 10th</td>
+                    <td>Tri Meet</td>
+                    <td>Marblehead vs. Masco & Salem</td>
+                </tr>
+                <tr>
+                    <td>Jan. 21st</td>
+                    <td>D3 State Relays</td>
+                    <td>Reggie Lewis</td>
+                </tr>
+                <tr>
+                    <td>Jan. 24th</td>
+                    <td>Dual Meet</td>
+                    <td>Gloucester</td>
+                </tr>
+                <tr>
+                    <td>Jan. 28th</td>
+                    <td>Coaches Invitational</td>
+                    <td>Reggie Lewis</td>
+                </tr>
+                <tr>
+                    <td>Jan. 31st</td>
+                    <td>Tri Meet</td>
+                    <td>Marblehead vs. Beverly & Saugus</td>
+                </tr>
+                <tr>
+                    <td>Feb. 10th</td>
+                    <td>NEC Championship</td>
+                    <td>Reggie Lewis</td>
+                </tr>
+                <tr>
+                    <td>Feb. 17th</td>
+                    <td>D3 State Championship</td>
+                    <td>Reggie Lewis</td>
+                </tr>
+                <tr>
+                    <td>Feb. 24th</td>
+                    <td>All-State Championship</td>
+                    <td>Reggie Lewis</td>
+                </tr>
+                <tr>
+                    <td>Mar. 2nd</td>
+                    <td>New England Championships</td>
+                    <td>Reggie Lewis</td>
+                </tr>
+            </table>
 
-    </div>
-    <div class="container text-center">
-        <a class=" p-3 border shadow rounded-pill bg-light" target="_blank"
-            href="https://docs.google.com/document/d/18tALhfmWMeL9163PVXVekIMx2fRjUr4zcFFuB5NLkWI/export?format=pdf">Click
-            here for PDF Download of the
-            schedule</a>
-    </div>
+        </div>
+
+
+        <div class="m-4 container text-center">
+            <button class="btn btn-light" id="printScheduleBtn">PDF Version</button>
+        </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+
+    function printData() {
+
+
+        const table = document.getElementById('scheduleTable');
+        const printWindow = window.open('', '', 'width=450,height=650');
+
+        printWindow.document.open();
+        printWindow.document.write('<html><head><title>Print Table</title></head><body>');
+        printWindow.document.write(table.outerHTML);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+
+
+    }
+
+    document.getElementById("printScheduleBtn")
+        .addEventListener("click", function () {
+            printData();
+        }
+        );
+
+</script>
 
 </html>
