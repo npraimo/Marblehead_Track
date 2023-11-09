@@ -106,8 +106,14 @@ table {
   }
   .btn-custom {
     width: 70vw;
-    height: 8vh;
+    height: 8.5vh;
     font-size: 1.3em;
+  }
+  .justQualify {
+    width: 100vw;
+  }
+  #scheduleTable {
+    width: 100vw;
   }
 }
 
@@ -119,4 +125,8 @@ table {
 }
 #scheduleTable tr td:nth-child(3) {
   width: 15vw;
+}
+
+.justQualify {
+  width: 100vw;
 }
