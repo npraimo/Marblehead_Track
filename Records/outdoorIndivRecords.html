@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="icon" type="image/x-icon" href="/Images/MarbleheadTrackLogo.png">
     <link rel="stylesheet" type="text/css" href="../styles.css">
     <title>Marblehead Individual Outdoor Track and Field Records</title>
@@ -18,6 +19,17 @@
         <a class=" h2 text-center font-weight-bold mainTitle">Marblehead
             Track and Field</a>
     </nav>
+    <div>
+        <form class="form-inline ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="button" id="girlButton">Girl Records</button>
+        <button type="button" id="boyButton">Boy Records</button>
+    </div>
+
 
     <div class="table-wrapper">
         <table class="girl">
@@ -225,7 +237,7 @@
                 <td>5</td>
                 <td>11</td>
                 <td>Devin Whalen</td>
-                <td>16.38 (0.0)</td>
+                <td>16.38</td>
                 <td>2022</td>
             </tr>
             <tr>
@@ -305,7 +317,7 @@
                 <td>5</td>
                 <td>12</td>
                 <td>Conrad Rousseau</td>
-                <td>16.03 (-2.6)</td>
+                <td>16.03</td>
                 <td>2014</td>
             </tr>
             <tr>
@@ -333,14 +345,14 @@
                 <td>9</td>
                 <td>12</td>
                 <td>Nik Karns</td>
-                <td>16.39 (3.3)</td>
+                <td>16.39</td>
                 <td>2019</td>
             </tr>
             <tr>
                 <td>10</td>
                 <td>11</td>
                 <td>George Goetz</td>
-                <td>16.48 (1.5)</td>
+                <td>16.48</td>
                 <td>2015</td>
             </tr>
         </table>
@@ -1768,7 +1780,7 @@
                 <td>1</td>
                 <td>11</td>
                 <td>Nolan Raimo</td>
-                <td>21' 7.25 (-.3)</td>
+                <td>21' 7.25</td>
                 <td>2011</td>
             </tr>
             <tr>
@@ -2082,115 +2094,258 @@
                 <td>2017</td>
             </tr>
         </table>
-        <table class="boy">
-            <th colspan="5">Boy's Javelin
-            </th>
-            <tr>
-                <th>Rank</th>
-                <th>Grade</th>
-                <th>Name</th>
-                <th>Distance</th>
-                <th>Season</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>12</td>
-                <td>Ian McIver</td>
-                <td>167' 4"</td>
-                <td>2014</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>11</td>
-                <td>Mitch Norcross</td>
-                <td>149' 5"</td>
-                <td>2015</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>12</td>
-                <td>Cristian Flores</td>
-                <td>149' 2"</td>
-                <td>2012</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>11</td>
-                <td>Jack McGrath</td>
-                <td>147' 0"</td>
-                <td>2018</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>12</td>
-                <td>Ryan Dumais</td>
-                <td>145' 4"</td>
-                <td>2018</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>12</td>
-                <td>Greg Worth</td>
-                <td>140' 10"</td>
-                <td>2011</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>12</td>
-                <td>Chris Brady</td>
-                <td>138' 4.75"</td>
-                <td>2015</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>11</td>
-                <td>Alex Blayer</td>
-                <td>131' 11"</td>
-                <td>2012</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>9</td>
-                <td>Nik Karns</td>
-                <td>124' 2"</td>
-                <td>2016</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>10</td>
-                <td>Devon Testa</td>
-                <td>121' 8"</td>
-                <td>2019</td>
-            </tr>
-        </table>
+        <div class="boy">
+            <table class="boy">
+                <th colspan="5">Boy's Javelin
+                </th>
+                <tr>
+                    <th>Rank</th>
+                    <th>Grade</th>
+                    <th>Name</th>
+                    <th>Distance</th>
+                    <th>Season</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>12</td>
+                    <td>Ian McIver</td>
+                    <td>167' 4"</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>11</td>
+                    <td>Mitch Norcross</td>
+                    <td>149' 5"</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>Cristian Flores</td>
+                    <td>149' 2"</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>11</td>
+                    <td>Jack McGrath</td>
+                    <td>147' 0"</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>12</td>
+                    <td>Ryan Dumais</td>
+                    <td>145' 4"</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>Greg Worth</td>
+                    <td>140' 10"</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>Chris Brady</td>
+                    <td>138' 4.75"</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>11</td>
+                    <td>Alex Blayer</td>
+                    <td>131' 11"</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>Nik Karns</td>
+                    <td>124' 2"</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>Devon Testa</td>
+                    <td>121' 8"</td>
+                    <td>2019</td>
+                </tr>
+            </table>
+        </div>
     </div>
-
-
-    <!-- <div id="test">
-        <button type="button" id="girlButton">Girl</button>
-        <button type="button" id="boyButton">Boy</button>
-    </div> -->
     <script>
-        // const selectBoy = document.getElementsByClassName('boy');
-        // const selectGirl = document.getElementsByClassName('girl');
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectBoy = document.getElementsByClassName('boy');
+            const selectGirl = document.getElementsByClassName('girl');
 
-        // const boyButton = document.getElementById('boyButton');
-        // const girlButton = document.getElementById('girlButton');
+            const boyButton = document.getElementById('boyButton');
+            const girlButton = document.getElementById('girlButton');
 
-        // boyButton.addEventListener('click', hideTable)
+            Array.from(selectBoy).forEach(function (element) {
+                element.style.display = 'none';
+            })
+            Array.from(selectGirl).forEach(function (element) {
+                element.style.display = 'none';
+            })
 
-        // function hideTable() {
-        //     console.log('hello')
-        //     if (selectBoy.style.display == 'none' || selectBoy.style.display == '') {
-        //         selectBoy.style.display = 'block';
-        //     }
-        //     else {
-        //         selectBoy.style.display = 'none';
-        //      }
-        // }
+            boyButton.addEventListener('click', showBoyTable)
+            girlButton.addEventListener('click', showGirlTable)
 
-
+            function showBoyTable() {
+                Array.from(selectBoy).forEach(function (element) {
+                    if (element.style.display == 'none') {
+                        element.style.display = 'block';
+                        boyButton.innerHTML = 'Hide Boy Records'
+                    }
+                    else {
+                        element.style.display = 'none';
+                        boyButton.innerHTML = 'Boy Records'
+                    }
+                })
+            }
+            function showGirlTable() {
+                Array.from(selectGirl).forEach(function (element) {
+                    if (element.style.display == 'none') {
+                        element.style.display = 'block';
+                        girlButton.innerHTML = 'Hide Girl Records';
+                    }
+                    else {
+                        element.style.display = 'none';
+                        girlButton.innerHTML = 'Girl Records';
+                    }
+                })
+            }
+        })
     </script>
 </body>
 
 </html>
+
+
+<!-- Code for a search box for records-->
+<!-- <section class="intro">
+
+    <div class="mask d-flex align-items-center h-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control form-control-lg rounded"
+                                    placeholder="Type Keywords" aria-label="Type Keywords"
+                                    aria-describedby="basic-addon2" />
+                                <span class="input-group-text border-0" id="basic-addon2"><i
+                                        class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h6 class="text-muted text-uppercase mt-3 mb-4">ADVANCED SEARCH</h6>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="dropdown">
+                                        <a class="btn btn-outline-danger btn-lg btn-block dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Accessories
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="dropdown">
+                                        <a class="btn btn-outline-danger btn-lg btn-block dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink1" data-mdb-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Color
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="dropdown">
+                                        <a class="btn btn-outline-danger btn-lg btn-block dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink2" data-mdb-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Size
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="dropdown">
+                                        <a class="btn btn-outline-danger btn-lg btn-block dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink3" data-mdb-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Sale
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="dropdown">
+                                        <a class="btn btn-outline-danger btn-lg btn-block dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink4" data-mdb-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Time
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="dropdown">
+                                        <a class="btn btn-outline-danger btn-lg btn-block dropdown-toggle" href="#"
+                                            role="button" id="dropdownMenuLink5" data-mdb-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Type
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <p class="text-muted mb-0"><span class="text-danger">108 </span>results</p>
+                                <div>
+                                    <button type="button" class="btn btn-link text-body"
+                                        data-mdb-ripple-color="dark">Reset</button>
+                                    <button type="button" class="btn btn-danger">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
