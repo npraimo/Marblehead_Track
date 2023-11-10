@@ -132,16 +132,20 @@ table {
   .justQualify {
     width: 95vw;
   }
+  .recordContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #scheduleTable tr td:nth-child(1) {
   width: 10vw;
 }
 #scheduleTable tr td:nth-child(2) {
-  width: 20vw;
+  width: 18vw;
 }
 #scheduleTable tr td:nth-child(3) {
-  width: 15vw;
+  width: 10vw;
 }
 
 /* GRAVEYARD */

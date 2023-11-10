@@ -18,6 +18,12 @@
             Track and Field</a>
     </nav>
 
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-light m-2" id="stateChampionshipButton">D3 State Championship
+            Qualifier</button>
+        <button type="button" class="btn btn-light m-2" id="allStateChampionshipButton">All-State Qualifier</button>
+    </div>
+
     <!-- // <button class="btn border-danger rounded-pill btn-light">D3 State Championship</button> -->
 
     <div class="d-flex justify-content-center recordContainer">
@@ -308,6 +314,49 @@
 
 
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const stateChampionshipTable = document.getElementById(
+            "stateChampionshipTable"
+        );
+        const allStateChampionshipTable = document.getElementById(
+            "allStateChampionshipTable"
+        );
+        const stateChampionshipButton = document.getElementById(
+            "stateChampionshipButton"
+        );
+        const allStateChampionshipButton = document.getElementById(
+            "allStateChampionshipButton"
+        );
+
+        stateChampionshipButton.addEventListener("click", showStateChampionshipTable);
+        allStateChampionshipButton.addEventListener(
+            "click",
+            showAllStateChampionshipTable
+        );
+        stateChampionshipTable.style.display = "none";
+        allStateChampionshipTable.style.display = "none";
+        function showStateChampionshipTable() {
+            if (stateChampionshipTable.style.display == "none") {
+                stateChampionshipTable.style.display = "block";
+                stateChampionshipButton.innerHTML = "Hide State Championship Records";
+            } else {
+                stateChampionshipTable.style.display = "none";
+                stateChampionshipButton.innerHTML = "State Championship Records";
+            }
+        }
+        function showAllStateChampionshipTable() {
+            if (allStateChampionshipTable.style.display == "none") {
+                allStateChampionshipTable.style.display = "block";
+                allStateChampionshipButton.innerHTML =
+                    "Hide All State Championship Records";
+            } else {
+                allStateChampionshipTable.style.display = "none";
+                allStateChampionshipButton.innerHTML = "All State Championship Records";
+            }
+        }
+    });
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
