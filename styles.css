@@ -129,13 +129,22 @@ table {
   #scheduleTable {
     width: 95vw;
   }
-  .justQualify {
-    width: 95vw;
+
+  .justQualify td:nth-child(1) {
+    width: 25vw;
   }
+
+  .justQualify td:nth-child(2) {
+    width: 30vw;
+  }
+  .justQualify td:nth-child(3) {
+    width: 40vw;
+  }
+
   .recordContainer {
     display: flex;
     flex-direction: column;
-    width: 95vw;
+    width: 100vw;
   }
 }
 

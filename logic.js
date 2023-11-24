@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const selectBoy = document.getElementsByClassName("boy");
   const selectGirl = document.getElementsByClassName("girl");
 
-  // Buttons!
-  const boyButton = document.getElementById("boyButton");
-  const girlButton = document.getElementById("girlButton");
-
   // Initial State
   Array.from(selectBoy).forEach(function (element) {
     element.style.display = "none";
@@ -14,6 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
   Array.from(selectGirl).forEach(function (element) {
     element.style.display = "none";
   });
+
+  // Buttons!
+  const boyButton = document.getElementById("boyButton");
+  const girlButton = document.getElementById("girlButton");
 
   // Event Listeners
   boyButton.addEventListener("click", showBoyTable);
