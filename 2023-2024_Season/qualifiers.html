@@ -21,10 +21,9 @@
     <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-light m-2" id="stateChampionshipButton">D3 State Championship
             Qualifier</button>
-        <button type="button" class="btn btn-light m-2" id="allStateChampionshipButton">All-State Qualifier</button>
+        <button type="button" class="btn btn-light m-2" id="allStateChampionshipButton">All-State Championship
+            Qualifier</button>
     </div>
-
-    <!-- // <button class="btn border-danger rounded-pill btn-light">D3 State Championship</button> -->
 
     <div class="d-flex justify-content-center recordContainer">
         <table class="justQualify my-4" id="stateChampionshipTable">
@@ -307,6 +306,16 @@
                     <td>24</td>
                     <td>8:19.18 FAT ONLY</td>
                 </tr>
+                <tr>
+                    <td>Girls 4x400m Relay</td>
+                    <td>24</td>
+                    <td>4:10.96 FAT ONLY</td>
+                </tr>
+                <tr>
+                    <td>Boys 4x400m Relay</td>
+                    <td>24</td>
+                    <td>3:32.97 FAT ONLY</td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -339,20 +348,20 @@
         function showStateChampionshipTable() {
             if (stateChampionshipTable.style.display == "none") {
                 stateChampionshipTable.style.display = "block";
-                stateChampionshipButton.innerHTML = "Hide State Championship Records";
+                stateChampionshipButton.innerHTML = "Hide D3 State Championship Qualifiers";
             } else {
                 stateChampionshipTable.style.display = "none";
-                stateChampionshipButton.innerHTML = "State Championship Records";
+                stateChampionshipButton.innerHTML = "D3 State Championship Qualifiers";
             }
         }
         function showAllStateChampionshipTable() {
             if (allStateChampionshipTable.style.display == "none") {
                 allStateChampionshipTable.style.display = "block";
                 allStateChampionshipButton.innerHTML =
-                    "Hide All State Championship Records";
+                    "Hide All-State Championship Qualifiers";
             } else {
                 allStateChampionshipTable.style.display = "none";
-                allStateChampionshipButton.innerHTML = "All State Championship Records";
+                allStateChampionshipButton.innerHTML = "All-State Championship Qualifiers";
             }
         }
     });
