@@ -57,6 +57,14 @@ tr:nth-child(odd) {
   font-size: 1.2em;
 }
 
+.boy {
+  display: none;
+}
+
+.girl {
+  display: none;
+}
+
 .relay-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -99,7 +107,6 @@ table {
   .table-wrapper {
     font-size: 1em;
   }
-
   td:nth-child(1) {
     width: 10vw;
   }
@@ -125,11 +132,9 @@ table {
     height: 9vh;
     font-size: 1.3em;
   }
-
   #scheduleTable {
     width: 95vw;
   }
-
   .justQualify td:nth-child(1) {
     width: 25vw;
   }
@@ -140,12 +145,15 @@ table {
   .justQualify td:nth-child(3) {
     width: 40vw;
   }
-
   .recordContainer {
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
+}
+
+.justQualify {
+  display: none;
 }
 
 #scheduleTable tr td:nth-child(1) {
