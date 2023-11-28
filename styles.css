@@ -152,10 +152,6 @@ table {
   }
 }
 
-.justQualify {
-  display: none;
-}
-
 #scheduleTable tr td:nth-child(1) {
   width: 10vw;
 }
