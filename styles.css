@@ -111,7 +111,7 @@ table {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   .table-wrapper {
     font-size: 1em;
   }
@@ -144,7 +144,7 @@ table {
     width: 95vw;
   }
   .justQualify td:nth-child(1) {
-    width: 25vw;
+    width: 5vw;
   }
 
   .justQualify td:nth-child(2) {
@@ -156,7 +156,6 @@ table {
   .recordContainer {
     display: flex;
     flex-direction: column;
-    width: 100vw;
   }
 }
 
