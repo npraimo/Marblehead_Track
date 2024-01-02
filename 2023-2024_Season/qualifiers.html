@@ -15,311 +15,182 @@
     <nav class="navbar navbar-light bg-danger d-flex flex-column">
         <a class="homeButton h2 font-weight-bold navbar-brand shadow border p-2 text-light"
             href="../index.html">Home</a>
-        <p class=" h2 text-center font-weight-bold mainTitle text-light">Marblehead
-            Track and Field</p>
+        <p class=" h3 text-center font-weight-bold mainTitle text-light">Marblehead T&F</p>
     </nav>
 
-    <div class="d-flex justify-content-center">
-        <!-- <button type="button" class="btn btn-light m-2 border-danger" id="allStateChampionshipButton">All-State
-            Championship
-            Qualifier</button> -->
-    </div>
+    <!-- <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-light m-2 border-danger" id="stateChampBtn">Hide State Championship
+            Qualifier</button>
+        <button type="button" class="btn btn-light m-2 border-danger" id="coachesInviteBtn">Hide Coaches
+            Invitational</button>
+    </div> -->
 
     <div class="d-flex justify-content-center recordContainer">
-        <table class="justQualify my-4" id="stateChampionshipTable">
+        <table class="justQualify px-4" id="stateChampionshipTable">
             <thead>
                 <tr>
-                    <th colspan="3">D3 State Championship Standards</th>
+                    <th colspan="4">D3 State Championship Standards</th>
                 </tr>
-            </thead>
-            <thead>
                 <tr>
                     <th>Event</th>
-                    <th>Entries</th>
-                    <th>Auto Qualifier</th>
+                    <th>Girls</th>
+                    <th>Boys</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Girls Long Jump</td>
-                    <td>24</td>
-                    <td>15' 9"</td>
+                    <td>55m Dash </td>
+                    <td>7.77 (FAT)</td>
+                    <td>6.89 (FAT)</td>
                 </tr>
                 <tr>
-                    <td>Girls Shot Put</td>
-                    <td>24</td>
-                    <td>28'11"</td>
+                    <td>55m Hurdles </td>
+                    <td>9.66 (FAT)</td>
+                    <td>8.79 (FAT)</td>
                 </tr>
                 <tr>
-                    <td>Boys Long Jump</td>
-                    <td>24</td>
-                    <td>19' 4"</td>
+                    <td>300 </td>
+                    <td>45.02 (FAT)</td>
+                    <td>38.13 (FAT)</td>
                 </tr>
                 <tr>
-                    <td>Boys Shot Put</td>
-                    <td>24</td>
-                    <td>41' 1"</td>
-                </tr>
-                <tr>
-                    <td>Girls 55m Hurdles Trials</td>
-                    <td>32</td>
-                    <td>9.66 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 55m Hurdles Trials</td>
-                    <td>32</td>
-                    <td>8.79 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 55m Dash Trials</td>
-                    <td>32</td>
-                    <td>7.77 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 55m Dash Trials</td>
-                    <td>32</td>
-                    <td>6.89 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls High Jump</td>
-                    <td>24</td>
-                    <td>4' 10"</td>
-                </tr>
-                <tr>
-                    <td>Boys High Jump</td>
-                    <td>24</td>
-                    <td>5' 8"</td>
-                </tr>
-                <tr>
-                    <td>Girls 1 Mile Final</td>
-                    <td>36</td>
-                    <td>5:52.04</td>
-                </tr>
-                <tr>
-                    <td>Boys 1 Mile Final</td>
-                    <td>36</td>
-                    <td>4:49.05</td>
-                </tr>
-                <tr>
-                    <td>Girls 600 meters Final</td>
-                    <td>36</td>
+                    <td>600 </td>
                     <td>1:47.27</td>
-                </tr>
-                <tr>
-                    <td>Boys 600 meters Final</td>
-                    <td>36</td>
                     <td>1:30.71</td>
                 </tr>
                 <tr>
-                    <td>Girls 1000 meters Final</td>
-                    <td>36</td>
+                    <td>1000 </td>
                     <td>3:20.71</td>
-                </tr>
-                <tr>
-                    <td>Boys 1000 meters Final</td>
-                    <td>36</td>
                     <td>2:48.58</td>
                 </tr>
+
                 <tr>
-                    <td>Girls 300 meters Final</td>
-                    <td>32</td>
-                    <td>45.02 FAT </td>
+                    <td>1 Mile</td>
+                    <td>5:52.04</td>
+                    <td>4:49.05</td>
                 </tr>
                 <tr>
-                    <td>Boys 300 meters Final</td>
-                    <td>32</td>
-                    <td>38.13 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 2 Mile Final</td>
-                    <td>32</td>
+                    <td>2 Mile</td>
                     <td>12:47.49</td>
-                </tr>
-                <tr>
-                    <td>Boys 2 Mile Final</td>
-                    <td>32</td>
                     <td>10:27.66</td>
                 </tr>
+
                 <tr>
-                    <td>Girls 4 x200m Relay</td>
-                    <td>24</td>
-                    <td>1:54.19</td>
+                    <td>Shot Put</td>
+                    <td>28'11"</td>
+                    <td>41' 1"</td>
                 </tr>
                 <tr>
-                    <td>Boys 4x200m Relay</td>
-                    <td>24</td>
+                    <td>High Jump</td>
+                    <td>4' 10"</td>
+                    <td>5' 8"</td>
+                </tr>
+                <tr>
+                    <td>Long Jump</td>
+                    <td>15' 9"</td>
+                    <td>19' 4"</td>
+                </tr>
+                <tr>
+                    <td>4x200m</td>
+                    <td>1:54.19</td>
                     <td>1:37.84</td>
                 </tr>
                 <tr>
-                    <td>Girls 4x800m Relay</td>
-                    <td>24</td>
-                    <td>10:53.21</td>
-                </tr>
-                <tr>
-                    <td>Boys 4x800m Relay</td>
-                    <td>24</td>
-                    <td>9:01.74</td>
-                </tr>
-                <tr>
-                    <td>Girls 4x400m Relay</td>
-                    <td>24</td>
+                    <td>4x400m</td>
                     <td>4:30.71</td>
+                    <td>3:43.25</td>
                 </tr>
                 <tr>
-                    <td>Boys 4x400m Relay</td>
-                    <td>24</td>
-                    <td>3:43.25</td>
+                    <td>4x800m</td>
+                    <td>10:53.21</td>
+                    <td>9:01.74</td>
                 </tr>
             </tbody>
         </table>
 
-        <!-- <table class="justQualify my-4" id="allStateChampionshipTable">
+        <table class="justQualify px-4" id="coachesInviteTable">
             <thead>
                 <tr>
-                    <th colspan="3">All-State Championship</th>
+                    <th colspan="4">Coaches Invite Qualifiers</th>
                 </tr>
-                <thead>
-                    <tr>
-                        <th>Event</th>
-                        <th>Entries</th>
-                        <th>SuperMax Qualifier</th>
-                    </tr>
-                </thead>
+            </thead>
+            <thead>
+                <tr>
+                    <th>Events</th>
+                    <th>Girls</th>
+                    <th>Boys</th>
+                </tr>
+            </thead>
             <tbody>
                 <tr>
-                    <td>Girls Long Jump</td>
-                    <td>24</td>
-                    <td>17' 4"</td>
+                    <td>55M Dash</td>
+                    <td>8.10(FAT)</td>
+                    <td>7.10(FAT)</td>
                 </tr>
                 <tr>
-                    <td>Girls Shot Put</td>
-                    <td>24</td>
-                    <td>34' 11"</td>
+                    <td>55M Hurdles</td>
+                    <td>10.00(FAT)</td>
+                    <td>8.85(FAT)</td>
                 </tr>
                 <tr>
-                    <td>Boys Long Jump</td>
-                    <td>24</td>
-                    <td>21' 02"</td>
+                    <td>300 </td>
+                    <td>46.00</td>
+                    <td>39.00</td>
                 </tr>
                 <tr>
-                    <td>Boys Shot Put</td>
-                    <td>24</td>
-                    <td>48' 2"</td>
+                    <td>600 </td>
+                    <td>1:48.00</td>
+                    <td>1:33.00</td>
                 </tr>
                 <tr>
-                    <td>Girls 55m Hurdles Trials</td>
-                    <td>24</td>
-                    <td>8.84 FAT </td>
+                    <td>1,000 </td>
+                    <td>3:25.00</td>
+                    <td>2:52.00</td>
                 </tr>
                 <tr>
-                    <td>Boys 55m Hurdles Trials</td>
-                    <td>24</td>
-                    <td>8.02 FAT </td>
+                    <td>1 Mile</td>
+                    <td>5:50.0</td>
+                    <td>4:50.0</td>
                 </tr>
                 <tr>
-                    <td>Girls 55m Dash Trials</td>
-                    <td>24</td>
-                    <td>7.48 FAT </td>
+                    <td>2 Mile</td>
+                    <td>12:50.0</td>
+                    <td>10:40.0</td>
                 </tr>
                 <tr>
-                    <td>Boys 55m Dash Trials</td>
-                    <td>24</td>
-                    <td>6.68 FAT </td>
+                    <td>Shot Put</td>
+                    <td>28’0”</td>
+                    <td>40’0”</td>
                 </tr>
                 <tr>
-                    <td>Girls High Jump</td>
-                    <td>24</td>
-                    <td>5' 4"</td>
+                    <td>High Jump</td>
+                    <td>4’8”</td>
+                    <td>5’8”</td>
                 </tr>
                 <tr>
-                    <td>Boys High Jump</td>
-                    <td>24</td>
-                    <td>6' 2"</td>
+                    <td>Long Jump</td>
+                    <td>15’0”</td>
+                    <td>18’6”</td>
                 </tr>
                 <tr>
-                    <td>Girls 1 Mile Final</td>
-                    <td>24</td>
-                    <td>5:16.41 FAT </td>
+                    <td>4x200</td>
+                    <td>1:56.00</td>
+                    <td>1:40.00</td>
                 </tr>
                 <tr>
-                    <td>Boys 1 Mile Final</td>
-                    <td>24</td>
-                    <td>4:27.78 FAT </td>
+                    <td>4x400</td>
+                    <td>4:40.00</td>
+                    <td>3:50.00</td>
                 </tr>
                 <tr>
-                    <td>Girls 600 meters Final</td>
-                    <td>24</td>
-                    <td>1:39.48 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 600 meters Final</td>
-                    <td>24</td>
-                    <td>1:24.85 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 1000 meters Final</td>
-                    <td>24</td>
-                    <td>3:04.50 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 1000 meters Final</td>
-                    <td>24</td>
-                    <td>2:35.87 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 300 meters Final</td>
-                    <td>24</td>
-                    <td>41.88 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 300 meters Final</td>
-                    <td>24</td>
-                    <td>36.36 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 2 Mile Final</td>
-                    <td>24</td>
-                    <td>11:26.18 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 2 Mile Final</td>
-                    <td>24</td>
-                    <td>9:31.68 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 4 x200m Relay</td>
-                    <td>24</td>
-                    <td>1:48.46 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 4x200m Relay</td>
-                    <td>24</td>
-                    <td>1:35.09 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 4x800m Relay</td>
-                    <td>24</td>
-                    <td>9:52.10 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 4x800m Relay</td>
-                    <td>24</td>
-                    <td>8:19.18 FAT </td>
-                </tr>
-                <tr>
-                    <td>Girls 4x400m Relay</td>
-                    <td>24</td>
-                    <td>4:10.96 FAT </td>
-                </tr>
-                <tr>
-                    <td>Boys 4x400m Relay</td>
-                    <td>24</td>
-                    <td>3:32.97 FAT </td>
+                    <td>4x800</td>
+                    <td>10:58.00</td>
+                    <td>8:55.00</td>
                 </tr>
             </tbody>
-        </table> -->
+        </table>
+        </table>
     </div>
-
 
 
 </body>
@@ -328,51 +199,51 @@
         const stateChampionshipTable = document.getElementById(
             "stateChampionshipTable"
         );
-        /*
-        const allStateChampionshipTable = document.getElementById(
-            "allStateChampionshipTable"
-        ); */
 
-        const stateChampionshipButton = document.getElementById(
-            "stateChampionshipButton"
+        const CoachesInviteTable = document.getElementById(
+            "coachesInviteTable"
         );
 
-        /*
-        const allStateChampionshipButton = document.getElementById(
-            "allStateChampionshipButton"
-        );*/
+        const StateChampBtn = document.getElementById(
+            "stateChampBtn"
+        );
 
-        stateChampionshipTable.style.display = "none";
-        // allStateChampionshipTable.style.display = "none";
 
-        stateChampionshipButton.addEventListener("click", showStateChampionshipTable);
-        /* allStateChampionshipButton.addEventListener(
+        const CoachesInviteBtn = document.getElementById(
+            "coachesInviteBtn"
+        );
+
+        // stateChampionshipTable.style.display = "none";
+        // coachesInviteTable.style.display = "none";
+
+        StateChampBtn.addEventListener("click", showStateChampionshipTable);
+        CoachesInviteBtn.addEventListener(
             "click",
-            showAllStateChampionshipTable
-        );*/
+            showCoachesInviteTable
+        );
 
         function showStateChampionshipTable() {
             if (stateChampionshipTable.style.display == "none") {
                 stateChampionshipTable.style.display = "block";
-                stateChampionshipButton.innerHTML = "Hide D3 State Championship Qualifiers";
+                StateChampBtn.innerHTML = "Hide State Championship Qualifiers";
             } else {
                 stateChampionshipTable.style.display = "none";
-                stateChampionshipButton.innerHTML = "D3 State Championship Qualifiers";
+                StateChampBtn.innerHTML = "State Championship Qualifiers";
             }
         }
 
-        /*
-        function showAllStateChampionshipTable() {
-            if (allStateChampionshipTable.style.display == "none") {
-                allStateChampionshipTable.style.display = "block";
-                allStateChampionshipButton.innerHTML =
-                    "Hide All-State Championship Qualifiers";
+
+        function showCoachesInviteTable() {
+            if (CoachesInviteTable.style.display == "none") {
+                CoachesInviteTable.style.display = "block";
+                CoachesInviteBtn.innerHTML =
+                    "Hide Coaches Invite Qualifiers";
             } else {
-                allStateChampionshipTable.style.display = "none";
-                allStateChampionshipButton.innerHTML = "All-State Championship Qualifiers";
+                CoachesInviteTable.style.display = "none";
+                CoachesInviteBtn.innerHTML = "Coaches Invite Qualifiers";
             }
         }
-        */
+
     });
 </script> -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
