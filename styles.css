@@ -180,6 +180,12 @@ table {
   width: 10vw;
 }
 
+.newBalanceLogo {
+  width: 350px;
+  height: 100px;
+  border: white;
+}
+
 /* GRAVEYARD */
 
 /* .card-header {
