@@ -171,13 +171,16 @@ table {
 }
 
 #scheduleTable tr td:nth-child(1) {
-  width: 10vw;
+  width: 15vw;
 }
 #scheduleTable tr td:nth-child(2) {
   width: 18vw;
 }
 #scheduleTable tr td:nth-child(3) {
   width: 10vw;
+}
+#scheduleTable tr td:nth-child(4) {
+  width: 8vw;
 }
 
 .newBalanceLogo {
