@@ -141,7 +141,7 @@ table {
     font-size: 1.3em;
   }
   #scheduleTable {
-    width: 90vw;
+    width: 100vw;
   }
   .justQualify td:nth-child(1) {
     width: 5vw;
