@@ -16,11 +16,23 @@ body {
 }
 
 .mainBtnContainer {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 20px;
   margin-top: 2vh;
+}
+
+.mainBtnContainer .row {
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.mainBtnContainer .col {
+  display: flex;
+  justify-content: center;
 }
 
 td:nth-child(3) {
